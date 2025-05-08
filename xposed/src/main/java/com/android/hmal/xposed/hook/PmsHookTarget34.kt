@@ -12,7 +12,7 @@ import icu.nullptr.hidemyapplist.xposed.*
 import java.util.concurrent.atomic.AtomicReference
 
 @TargetApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
-class PmsHookTarget34(private val service: HMAService) : IFrameworkHook {
+class PmsHookTarget34(private val service: HMALService) : IFrameworkHook {
 
     companion object {
         private const val TAG = "PmsHookTarget34"
