@@ -1,4 +1,4 @@
-package icu.nullptr.hidemyapplist.xposed.hook
+package com.android.hmal.xposed.hook
 
 import android.annotation.TargetApi
 import android.os.Binder
