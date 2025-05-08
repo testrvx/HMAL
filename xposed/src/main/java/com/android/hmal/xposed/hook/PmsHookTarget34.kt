@@ -44,7 +44,6 @@ class PmsHookTarget34(private val service: HMALService) : IFrameworkHook {
                 for (caller in callingApps) {
                     if (service.shouldHide(caller, targetApp)) {
                         param.result = true
-                        service.filterCount++
                         val last = lastFilteredApp.getAndSet(caller)
                         if (last != caller)
                         return@hookBefore
@@ -69,7 +68,6 @@ class PmsHookTarget34(private val service: HMALService) : IFrameworkHook {
                 for (caller in callingApps) {
                     if (service.shouldHide(caller, targetApp)) {
                         param.result = null
-                        service.filterCount++
                         val last = lastFilteredApp.getAndSet(caller)
                         if (last != caller)
                         return@hookBefore
